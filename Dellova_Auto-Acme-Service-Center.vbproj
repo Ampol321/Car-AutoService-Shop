@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03B66E9B-03C7-4504-98CB-75A8EA5CDCAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Dellova_Auto_Acme_Service_Center.My.MyApplication</StartupObject>
+    <RootNamespace>Dellova_Auto_Acme_Service_Center</RootNamespace>
+    <AssemblyName>Dellova_Auto-Acme-Service-Center</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Dellova_Auto-Acme-Service-Center.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Dellova_Auto-Acme-Service-Center.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI2, Version=2.0.3.3, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.3\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SCHOOL APPLICATIONS\MYSQL CONNECTOR\connector\Assemblies\net5.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Receipts\DateRangeIncome.Designer.vb">
+      <DependentUpon>DateRangeIncome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\DateRangeIncome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\CarModel.Designer.vb">
+      <DependentUpon>CarModel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\CarModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\CarType.Designer.vb">
+      <DependentUpon>CarType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\CarType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connections.vb" />
+    <Compile Include="Machine Problems\Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Customers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\Manufacturers.Designer.vb">
+      <DependentUpon>Manufacturers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Manufacturers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\Mechanics.Designer.vb">
+      <DependentUpon>Mechanics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Mechanics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\SearchHistory.Designer.vb">
+      <DependentUpon>SearchHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\SearchHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\Quiz4.Designer.vb">
+      <DependentUpon>Quiz4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\Quiz4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\Quiz5.Designer.vb">
+      <DependentUpon>Quiz5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\Quiz5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\Quiz2.Designer.vb">
+      <DependentUpon>Quiz2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\Quiz2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\Quiz3.Designer.vb">
+      <DependentUpon>Quiz3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\Quiz3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizes\Quiz1.Designer.vb">
+      <DependentUpon>Quiz1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quizes\Quiz1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Machine Problems\Parts.Designer.vb">
+      <DependentUpon>Parts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Parts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\PartsSupplier.Designer.vb">
+      <DependentUpon>PartsSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\PartsSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\Services.Designer.vb">
+      <DependentUpon>Services.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Services.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\Suppliers.Designer.vb">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Suppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine Problems\Vehicles.Designer.vb">
+      <DependentUpon>Vehicles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Machine Problems\Vehicles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipts\DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\DataSet.vb">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\DateRange.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DateRange.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipts\FullReceipt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FullReceipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipts\FullServiceReceipt.Designer.vb">
+      <DependentUpon>FullServiceReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\FullServiceReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipts\Overall.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Overall.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receipts\OverallIncome.Designer.vb">
+      <DependentUpon>OverallIncome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\OverallIncome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Receipts\DateRangeIncome.resx">
+      <DependentUpon>DateRangeIncome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\CarModel.resx">
+      <DependentUpon>CarModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\CarType.resx">
+      <DependentUpon>CarType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Customers.resx">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Manufacturers.resx">
+      <DependentUpon>Manufacturers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Mechanics.resx">
+      <DependentUpon>Mechanics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\SearchHistory.resx">
+      <DependentUpon>SearchHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\Quiz4.resx">
+      <DependentUpon>Quiz4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\Quiz2.resx">
+      <DependentUpon>Quiz2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\Quiz1.resx">
+      <DependentUpon>Quiz1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Parts.resx">
+      <DependentUpon>Parts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\PartsSupplier.resx">
+      <DependentUpon>PartsSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Services.resx">
+      <DependentUpon>Services.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Suppliers.resx">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine Problems\Vehicles.resx">
+      <DependentUpon>Vehicles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\Quiz3.resx">
+      <DependentUpon>Quiz3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizes\Quiz5.resx">
+      <DependentUpon>Quiz5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipts\DateRange.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DateRange.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipts\FullReceipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FullReceipt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipts\FullServiceReceipt.resx">
+      <DependentUpon>FullServiceReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipts\Overall.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Overall.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipts\OverallIncome.resx">
+      <DependentUpon>OverallIncome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Receipts\DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Receipts\DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Receipts\DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
